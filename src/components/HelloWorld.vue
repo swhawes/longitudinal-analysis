@@ -1,11 +1,13 @@
 <template>
 
 <div>
-    <h1>Python Code Example2</h1>
-    <MyCodeMirror xxxx yyyyy
-    zzzzzz
-    />
-    <h1>test</h1>
+  <h1>TipTap Code Example</h1>
+    <TipTap/>
+  </div>
+
+<div>
+    <h1>Python Code Example</h1>
+    <MyCodeMirror/>
   </div>
 
   
@@ -201,6 +203,7 @@ import {
 import { BoltIcon, CalendarDaysIcon, UsersIcon } from '@heroicons/vue/24/outline'
 
 import MyCodeMirror from './MyCodeMirror.vue';  // Import from the same directory
+import TipTap from './TipTap.vue';
 
 const primaryFeatures = [
   {
