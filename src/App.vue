@@ -3,16 +3,17 @@ import HelloWorld from './components/HelloWorld.vue'
 import CodeHighlighter from './components/CodeHighlighter.vue'
 </script>
 
+<!-- <script>
+</script> -->
+
 <template>
   <HelloWorld msg="Vite + Vue" />
   <h2>Test test Test</h2>
   <CodeHighlighter msg="Sample text here" />
   <h2>test test</h2>
+
   <p>
   <router-link to="/">Go to Home</router-link>
-  </p>
-  <p>
-  <router-link to="/about">Go to About</router-link>
   </p>
   <p>
   <router-link to="/about">Go to About</router-link>
