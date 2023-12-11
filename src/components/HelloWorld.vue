@@ -1,4 +1,14 @@
 <template>
+
+<div>
+    <h1>Python Code Example2</h1>
+    <MyCodeMirror xxxx yyyyy
+    zzzzzz
+    />
+    <h1>test</h1>
+  </div>
+
+  
   <p class="text-sky-400">The quick brown fox...</p>
   <div class="bg-gray-900">
     <main>/
@@ -189,6 +199,8 @@ import {
   ServerIcon,
 } from '@heroicons/vue/20/solid'
 import { BoltIcon, CalendarDaysIcon, UsersIcon } from '@heroicons/vue/24/outline'
+
+import MyCodeMirror from './MyCodeMirror.vue';  // Import from the same directory
 
 const primaryFeatures = [
   {

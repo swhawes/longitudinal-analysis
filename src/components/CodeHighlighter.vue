@@ -1,32 +1,20 @@
-<!-- CodeHighlighter.vue -->
-
 <template>
-  <pre v-html="highlightedCode"></pre>
-
-  testxz testxx Testxr
-
+  <div>
+    <h1>Python Code Example</h1>
+    <MyCodeMirror />
+  </div>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
-import { getHighlighter } from 'shiki';
+import MyCodeMirror from './MyCodeMirror.vue'; // Import from the same directory
 
 export default {
-  name: 'CodeHighlighter',  // Component name
-  props: {
-    code: String,
-    language: String
-  },
-  setup(props) {
-    const highlightedCode = ref('');
-
-    onMounted(async () => {
-      const highlighter = await getHighlighter({ theme: 'nord' });
-      highlightedCode.value = highlighter.codeToHtml(props.code, { lang: props.language });
-    });
-
-    return { highlightedCode };
+  components: {
+    MyCodeMirror
   }
 };
 </script>
 
+<style>
+/* Additional styles if needed */
+</style>

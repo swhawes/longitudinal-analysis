@@ -3,7 +3,6 @@ import Home from '/views/Home.vue'
 import About from '/views/About.vue'
 import TraditionalLinearModels from '/views/TraditionalLinearModels.vue'
 import ResidualizedChangeScore from '/views/ResidualizedChangeScore.vue'
-import HighlightTest from '/views/HighlightTest.vue'
 import User from '/views/Users/User.vue'
 import UserHome from '/views/Users/UserHome.vue'
 import UserProfile from '/views/Users/UserProfile.vue'
@@ -23,7 +22,6 @@ export const router = createRouter({
         {path: '/about', name: 'About', component: About},
         {path: '/TraditionalLinearModels', name: 'TraditionalLinearModels', component: TraditionalLinearModels},
         {path: '/ResidualizedChangeScore', name: 'ResidualizedChangeScore', component: ResidualizedChangeScore},
-        {path: '/HighlightTest', name: 'HighlightTest', component: HighlightTest},
         {path: '/user/:username',
         component: User,
         children: [
