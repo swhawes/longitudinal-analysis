@@ -1,3 +1,7 @@
+
+<!-- <template>
+  testing `TipTapCode.vue` file
+</template> -->
 <template>
   <div v-if="editor">
     <button @click="editor.chain().focus().toggleCodeBlock().run()" :class="{ 'is-active': editor.isActive('codeBlock') }">
